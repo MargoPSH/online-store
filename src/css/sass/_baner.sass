@@ -1,0 +1,46 @@
+@import "vars"
+@import "mixins"
+
+.main-index__baner
+    +flex()
+    position: relative
+    background-color: $bg-color-baner
+    margin-bottom: 100px
+    &_sale
+        color: $color-white
+        font-size: $f-size-54
+        font-weight: $f-weight-700
+        position: absolute
+        top: 150px
+        left: 40px
+        text-transform: uppercase
+        span
+            color: $color-brand-pink
+        p:last-child
+            font-size: $f-size-32
+
+.feature-box
+    +flex()
+    padding: 30px
+    color: $text-banner
+    &__img
+        width: 35px
+        height: 30px
+    &__text
+        +flex()
+        +column()
+        padding-left: 30px
+        a
+            color: $text-banner           
+            font-size: $f-size-20
+            font-weight: $f-weight-700
+            margin-bottom: 15px
+            &:hover
+                text-decoration: underline
+            &:active
+                color: $color-brand-pink
+        p
+            font-size: $f-size-13
+            font-weight: $f-weight-300
+            line-height: $l-heght-24 
+

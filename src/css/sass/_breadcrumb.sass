@@ -1,0 +1,43 @@
+@import "vars"
+@import "mixins"
+
+.breadcrumb
+	height: 150px
+	margin-bottom: 60px
+	&__content
+		+flex()
+		+center()
+		+space-between()
+		height: 100%
+		background-color: $color-bread
+		&_link
+			color: $color-brand-pink
+			font-size: $f-size-24
+			font-weight: $f-weight-900
+			line-height: $l-height-20
+			text-transform: uppercase
+		&_ul
+			+flex()
+			a
+				color: $color-bread-grey
+				font-size: $f-size-14
+				font-weight: $f-weight-300
+				line-height: $l-height-20
+				text-transform: uppercase
+				margin-left: 3px
+				margin-right: 3px
+				+transition-color(0.3s)
+				&:hover
+					color: $color-brand-pink
+			li
+				&::after
+					content: '/'
+				&:last-child::after
+					content: ''
+				&:last-child
+					a
+						color: $color-brand-pink
+						font-weight: $f-weight-700
+						+transition-color(0.3s)
+						&:hover
+							color: $color-bread-grey

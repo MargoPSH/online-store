@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Shopping Cart</title>
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+	<header>
+		<div class="header-flex container">
+			<div class="left-header">
+				<a href="index.html" class="left-header__logo">
+					<img src="img/logo.png" alt="Logotip">
+					<p>BRAN<span><b>D</b></span></p>
+				</a>
+				<div class="submenu">
+					<a href="#" class="browse">Browse
+						<i class="fa fa-caret-down browse__caret browse__caret_grey" aria-hidden="true"></i>
+					</a>
+					<div class="ddflex">
+						<div class="ddflex__triangle ddflex__triangle_browse"></div>
+						<div class="ddflex__content ddflex__content_browse">
+							<h1>Women</h1>
+							<ul>
+								<li><a href="#">Dresses</a></li>
+								<li><a href="#">Tops</a></li>
+								<li><a href="#">Sweaters/Knits</a></li>
+								<li><a href="#">Jackets/Coats</a></li>
+								<li><a href="#">Blazers</a></li>
+								<li><a href="#">Denim</a></li>
+								<li><a href="#">Leggings/Pants</a></li>
+								<li><a href="#">Skirts/Shorts</a></li>
+								<li><a href="#">Accessories</a></li>
+							</ul>
+							<h1>Men</h1>
+							<ul>
+								<li><a href="#">Tees/Tank tops</a></li>
+								<li><a href="#">Shirts/Polos</a></li>
+								<li><a href="#">Sweaters</a></li>
+								<li><a href="#">Sweatshirts/Hoodies</a></li>
+								<li><a href="#">Blazers</a></li>
+								<li><a href="#">Jackets/vests</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<form action="#" class="search">
+					<input type="text" class="search__str" placeholder="Search for item...">
+					<button type="submit" class="search__btn">
+						<i class="fa fa-search search__btn_grey" aria-hidden="true"></i>
+					</button>
+				</form>
+			</div>
+			<div class="right-header">
+				<div class="submenu">
+					<div class="ellips"><span>2</span></div>
+					<a href="#" class="link-cart"><img src="img/cart.svg" alt="Cart"></a>
+					<div class="ddflex">
+						<div class="ddflex__triangle ddflex__triangle_cart"></div>
+						<div class="ddflex__content ddflex__content_cart">
+							<div class="position">
+								<a href="#">
+									<div class="foto"></div>
+									<div class="foto-text">
+										<p>REBOX ZANE</p>
+										<div class="stars-fa-fw">
+											<i class="fa fa-star fa-fw" aria-hidden="true"></i>
+											<i class="fa fa-star fa-fw" aria-hidden="true"></i>
+											<i class="fa fa-star fa-fw" aria-hidden="true"></i>
+											<i class="fa fa-star fa-fw" aria-hidden="true"></i>
+											<i class="fa fa-star fa-fw" aria-hidden="true"></i>
+										</div>
+										<span>1  x  $250</span>
+									</div>
+								</a>
+								<div class="cross">
+									<i class="fa fa-times" aria-hidden="true"></i>
+								</div>
+							</div>
+							<div class="position">
+								<a href="#">
+									<div class="foto"></div>
+									<div class="foto-text">
+										<p>REBOX ZANE</p>
+										<div class="stars-fa-fw">
+											<i class="fa fa-star fa-fw" aria-hidden="true"></i>
+											<i class="fa fa-star fa-fw" aria-hidden="true"></i>
+											<i class="fa fa-star fa-fw" aria-hidden="true"></i>
+											<i class="fa fa-star fa-fw" aria-hidden="true"></i>
+											<i class="fa fa-star fa-fw" aria-hidden="true"></i>
+										</div>
+										<span>1  x  $250</span>
+									</div>
+								</a>
+								<div class="cross">
+									<i class="fa fa-times" aria-hidden="true"></i>
+								</div>
+							</div>
+							<div class="total">
+								<span>TOTAL</span>
+								<span>$500.00</span>
+							</div>
+							<form action="#" class="cart-btn">
+								<button type="submit">CHECKOUT</button>
+								<button type="submit">GO TO CART</button>
+							</form>						
+						</div>
+					</div>
+				</div>
+				<a href="#" class="account">My Account
+					<i class="fa fa-caret-down" aria-hidden="true"></i>
+				</a>
+			</div>
+		</div>
+	</header>
+	<nav>
+		<div class="container">
+			<ul class="menu">
+				<li><a href="index.html" class="menu__link">Home</a></li>
+				<li class="submenu">
+					<a href="products.html" class="menu__link">Man</a>
+					<div class="ddflex">
+						<div class="ddflex__triangle ddflex__triangle_man"></div>
+						<div class="ddflex__content ddflex__content_man">
+							<div class="column">
+								<h1>Women</h1>
+								<ul class="column__ul">
+									<li><a href="#">Dresses</a></li>
+									<li><a href="#">Tops</a></li>
+									<li><a href="#">Sweaters/Knits</a></li>
+									<li><a href="#">Jackets/Coats</a></li>
+									<li><a href="#">Blazers</a></li>
+									<li><a href="#">Denim</a></li>
+									<li><a href="#">Leggings/Pants</a></li>
+									<li><a href="#">Skirts/Shorts</a></li>
+									<li><a href="#">Accessories</a></li>
+								</ul>
+							</div>
+							<div class="column">
+								<h1>Women</h1>
+								<ul class="column__ul">
+									<li><a href="#">Dresses</a></li>
+									<li><a href="#">Tops</a></li>
+									<li><a href="#">Sweaters/Knits</a></li>
+									<li><a href="#">Jackets/Coats</a></li>
+								</ul>
+								<h1>Women</h1>
+								<ul class="column__ul">
+									<li><a href="#">Dresses</a></li>
+									<li><a href="#">Tops</a></li>
+									<li><a href="#">Sweaters/Knits</a></li>
+								</ul>
+							</div>
+							<div class="column">
+								<h1>Women</h1>
+								<ul class="column__ul">
+									<li><a href="#">Dresses</a></li>
+									<li><a href="#">Tops</a></li>
+									<li><a href="#">Sweaters/Knits</a></li>
+									<li><a href="#">Jackets/Coats</a></li>
+								</ul>
+								<a href="#" class="promo-ad" class="column__ul">
+									<img src="img/Promo-Ad.jpg" alt="Promo-Ad">
+									<span>Super sale!</span>
+								</a>
+							</div>							
+						</div>
+					</div>
+				</li>			
+				<li class="submenu">
+					<a href="products.html" class="menu__link">Women</a>
+					<div class="ddflex">
+						<div class="ddflex__triangle ddflex__triangle_women"></div>
+						<div class="ddflex__content ddflex__content_women">
+							<div class="column">
+								<h1>Women</h1>
+								<ul class="column__ul">
+									<li><a href="#">Dresses</a></li>
+									<li><a href="#">Tops</a></li>
+									<li><a href="#">Sweaters/Knits</a></li>
+									<li><a href="#">Jackets/Coats</a></li>
+									<li><a href="#">Blazers</a></li>
+									<li><a href="#">Denim</a></li>
+									<li><a href="#">Leggings/Pants</a></li>
+									<li><a href="#">Skirts/Shorts</a></li>
+									<li><a href="#">Accessories</a></li>
+								</ul>
+							</div>
+							<div class="column">
+								<h1>Women</h1>
+								<ul class="column__ul">
+									<li><a href="#">Dresses</a></li>
+									<li><a href="#">Tops</a></li>
+									<li><a href="#">Sweaters/Knits</a></li>
+									<li><a href="#">Jackets/Coats</a></li>
+								</ul>
+								<h1>Women</h1>
+								<ul class="column__ul">
+									<li><a href="#">Dresses</a></li>
+									<li><a href="#">Tops</a></li>
+									<li><a href="#">Sweaters/Knits</a></li>
+								</ul>
+							</div>
+							<div class="column">
+								<h1>Women</h1>
+								<ul class="column__ul">
+									<li><a href="#">Dresses</a></li>
+									<li><a href="#">Tops</a></li>
+									<li><a href="#">Sweaters/Knits</a></li>
+									<li><a href="#">Jackets/Coats</a></li>
+								</ul>
+								<a href="#" class="promo-ad" class="column__ul">
+									<img src="img/Promo-Ad.jpg" alt="Promo-Ad">
+									<span>Super sale!</span>
+								</a>
+							</div>							
+						</div>
+					</div>
+				</li>
+				<li class="submenu">
+					<a href="products.html" class="menu__link">Kids</a>
+					<div class="ddflex">
+						<div class="ddflex__triangle ddflex__triangle_kids"></div>
+						<div class="ddflex__content ddflex__content_kids">
+							<div class="column">
+								<h1>Women</h1>
+								<ul class="column__ul">
+									<li><a href="#">Dresses</a></li>
+									<li><a href="#">Tops</a></li>
+									<li><a href="#">Sweaters/Knits</a></li>
+									<li><a href="#">Jackets/Coats</a></li>
+									<li><a href="#">Blazers</a></li>
+									<li><a href="#">Denim</a></li>
+									<li><a href="#">Leggings/Pants</a></li>
+									<li><a href="#">Skirts/Shorts</a></li>
+									<li><a href="#">Accessories</a></li>
+								</ul>
+							</div>
+							<div class="column">
+								<h1>Women</h1>
+								<ul class="column__ul">
+									<li><a href="#">Dresses</a></li>
+									<li><a href="#">Tops</a></li>
+									<li><a href="#">Sweaters/Knits</a></li>
+									<li><a href="#">Jackets/Coats</a></li>
+								</ul>
+								<h1>Women</h1>
+								<ul class="column__ul">
+									<li><a href="#">Dresses</a></li>
+									<li><a href="#">Tops</a></li>
+									<li><a href="#">Sweaters/Knits</a></li>
+								</ul>
+							</div>
+							<div class="column">
+								<h1>Women</h1>
+								<ul class="column__ul">
+									<li><a href="#">Dresses</a></li>
+									<li><a href="#">Tops</a></li>
+									<li><a href="#">Sweaters/Knits</a></li>
+									<li><a href="#">Jackets/Coats</a></li>
+								</ul>
+								<a href="#" class="promo-ad" class="column__ul">
+									<img src="img/Promo-Ad.jpg" alt="Promo-Ad">
+									<span>Super sale!</span>
+								</a>
+							</div>							
+						</div>
+					</div>
+				</li>
+				<li class="submenu">
+					<a href="products.html" class="menu__link">Accoseriese</a>
+					<div class="ddflex">
+						<div class="ddflex__triangle ddflex__triangle_accoseriese"></div>
+						<div class="ddflex__content ddflex__content_accoseriese">
+							<div class="column">
+								<h1>Women</h1>
+								<ul class="column__ul">
+									<li><a href="#">Dresses</a></li>
+									<li><a href="#">Tops</a></li>
+									<li><a href="#">Sweaters/Knits</a></li>
+									<li><a href="#">Jackets/Coats</a></li>
+									<li><a href="#">Blazers</a></li>
+									<li><a href="#">Denim</a></li>
+									<li><a href="#">Leggings/Pants</a></li>
+									<li><a href="#">Skirts/Shorts</a></li>
+									<li><a href="#">Accessories</a></li>
+								</ul>
+							</div>
+							<div class="column">
+								<h1>Women</h1>
+								<ul class="column__ul">
+									<li><a href="#">Dresses</a></li>
+									<li><a href="#">Tops</a></li>
+									<li><a href="#">Sweaters/Knits</a></li>
+									<li><a href="#">Jackets/Coats</a></li>
+								</ul>
+								<h1>Women</h1>
+								<ul class="column__ul">
+									<li><a href="#">Dresses</a></li>
+									<li><a href="#">Tops</a></li>
+									<li><a href="#">Sweaters/Knits</a></li>
+								</ul>
+							</div>
+							<div class="column">
+								<h1>Women</h1>
+								<ul class="column__ul">
+									<li><a href="#">Dresses</a></li>
+									<li><a href="#">Tops</a></li>
+									<li><a href="#">Sweaters/Knits</a></li>
+									<li><a href="#">Jackets/Coats</a></li>
+								</ul>
+								<a href="#" class="promo-ad" class="column__ul">
+									<img src="img/Promo-Ad.jpg" alt="Promo-Ad">
+									<span>Super sale!</span>
+								</a>
+							</div>							
+						</div>
+					</div>
+				</li>
+				<li class="submenu">
+					<a href="products.html" class="menu__link">Featured</a>
+					<div class="ddflex">
+						<div class="ddflex__triangle ddflex__triangle_featured"></div>
+						<div class="ddflex__content ddflex__content_featured">
+							<div class="column">
+								<h1>Women</h1>
+								<ul class="column__ul">
+									<li><a href="#">Dresses</a></li>
+									<li><a href="#">Tops</a></li>
+									<li><a href="#">Sweaters/Knits</a></li>
+									<li><a href="#">Jackets/Coats</a></li>
+									<li><a href="#">Blazers</a></li>
+									<li><a href="#">Denim</a></li>
+									<li><a href="#">Leggings/Pants</a></li>
+									<li><a href="#">Skirts/Shorts</a></li>
+									<li><a href="#">Accessories</a></li>
+								</ul>
+							</div>
+							<div class="column">
+								<h1>Women</h1>
+								<ul class="column__ul">
+									<li><a href="#">Dresses</a></li>
+									<li><a href="#">Tops</a></li>
+									<li><a href="#">Sweaters/Knits</a></li>
+									<li><a href="#">Jackets/Coats</a></li>
+								</ul>
+								<h1>Women</h1>
+								<ul class="column__ul">
+									<li><a href="#">Dresses</a></li>
+									<li><a href="#">Tops</a></li>
+									<li><a href="#">Sweaters/Knits</a></li>
+								</ul>
+							</div>
+							<div class="column">
+								<h1>Women</h1>
+								<ul class="column__ul">
+									<li><a href="#">Dresses</a></li>
+									<li><a href="#">Tops</a></li>
+									<li><a href="#">Sweaters/Knits</a></li>
+									<li><a href="#">Jackets/Coats</a></li>
+								</ul>
+								<a href="#" class="promo-ad" class="column__ul">
+									<img src="img/Promo-Ad.jpg" alt="Promo-Ad">
+									<span>Super sale!</span>
+								</a>
+							</div>							
+						</div>
+					</div>
+				</li>
+				<li class="submenu">
+					<a href="products.html" class="menu__link">Hot Deals</a>
+					<div class="ddflex">
+						<div class="ddflex__triangle ddflex__triangle_deals"></div>
+						<div class="ddflex__content ddflex__content_deals">
+							<div class="column">
+								<h1>Women</h1>
+								<ul class="column__ul">
+									<li><a href="#">Dresses</a></li>
+									<li><a href="#">Tops</a></li>
+									<li><a href="#">Sweaters/Knits</a></li>
+									<li><a href="#">Jackets/Coats</a></li>
+									<li><a href="#">Blazers</a></li>
+									<li><a href="#">Denim</a></li>
+									<li><a href="#">Leggings/Pants</a></li>
+									<li><a href="#">Skirts/Shorts</a></li>
+									<li><a href="#">Accessories</a></li>
+								</ul>
+							</div>
+							<div class="column">
+								<h1>Women</h1>
+								<ul class="column__ul">
+									<li><a href="#">Dresses</a></li>
+									<li><a href="#">Tops</a></li>
+									<li><a href="#">Sweaters/Knits</a></li>
+									<li><a href="#">Jackets/Coats</a></li>
+								</ul>
+								<h1>Women</h1>
+								<ul class="column__ul">
+									<li><a href="#">Dresses</a></li>
+									<li><a href="#">Tops</a></li>
+									<li><a href="#">Sweaters/Knits</a></li>
+								</ul>
+							</div>
+							<div class="column">
+								<h1>Women</h1>
+								<ul class="column__ul">
+									<li><a href="#">Dresses</a></li>
+									<li><a href="#">Tops</a></li>
+									<li><a href="#">Sweaters/Knits</a></li>
+									<li><a href="#">Jackets/Coats</a></li>
+								</ul>
+								<a href="#" class="promo-ad" class="column__ul">
+									<img src="img/Promo-Ad.jpg" alt="Promo-Ad">
+									<span>Super sale!</span>
+								</a>
+							</div>							
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="breadcrumb">
+		<div class="container breadcrumb__content">
+			<p class="breadcrumb__content_link">New arrivals</p>
+			<nav>
+				<ul class="breadcrumb__content_ul">
+					<li><a href="#">home</a></li>
+					<li><a href="#">men</a></li>
+					<li><a href="#">new arrivals</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<main>
+		<div class="container main__content">
+			<table class="cart-table">
+				<tr>
+					<th>product details</th>
+					<th>unite price</th>
+					<th>quantity</th>
+					<th>shipping</th>
+					<th>subtotal</th>
+					<th>action</th>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" class="cart-table__img"><img src="img/cart/img1.png"></a>
+						<div class="cart-table__product">
+							<a href="#" class="cart-table__product_a"><h2>mango people t-shirt</h2></a>
+							<p class="cart-table__product_atribut">Color: <span>Red</span></p>
+							<p class="cart-table__product_atribut">Size: <span>XXL</span></p>
+						</div>
+					</td>
+					<td>$150</td>
+					<td>
+						<form action="#">
+							<input type="text" name="quantity" placeholder="2">
+						</form>
+					</td>
+					<td>free</td>
+					<td>$300</td>
+					<td>
+						<div class="cross cross__table">
+							<i class="fa fa-times" aria-hidden="true"></i>						
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" class="cart-table__img"><img src="img/cart/img2.png"></a>
+						<div class="cart-table__product">
+							<a href="#" class="cart-table__product_a"><h2>mango people t-shirt</h2></a>
+							<p class="cart-table__product_atribut">Color: <span>Red</span></p>
+							<p class="cart-table__product_atribut">Size: <span>XXL</span></p>
+						</div>
+					</td>
+					<td>$150</td>
+					<td>
+						<form action="#">
+							<input type="text" name="quantity" placeholder="2">
+						</form>
+					</td>
+					<td>free</td>
+					<td>$300</td>
+					<td>
+						<div class="cross cross__table">
+							<i class="fa fa-times" aria-hidden="true"></i>						
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" class="cart-table__img"><img src="img/cart/img3.png"></a>
+						<div class="cart-table__product">
+							<a href="#" class="cart-table__product_a"><h2>mango people t-shirt</h2></a>
+							<p class="cart-table__product_atribut">Color: <span>Red</span></p>
+							<p class="cart-table__product_atribut">Size: <span>XXL</span></p>
+						</div>
+					</td>
+					<td>$150</td>
+					<td>
+						<form action="#">
+							<input type="text" name="quantity" placeholder="2">
+						</form>
+					</td>
+					<td>free</td>
+					<td>$300</td>
+					<td>
+						<div class="cross cross__table">
+							<i class="fa fa-times" aria-hidden="true"></i>						
+						</div>
+					</td>
+				</tr>
+			</table>
+			<div class="cart-buttons">
+				<button>clear shopping cart</button>
+				<button>continue shopping</button>
+			</div>
+			<div class="cart-delivery">
+				<form action="#">
+					<fieldset>
+						<legend>shipping adress</legend>
+						<select name="citi" id="citi" class="cart-delivery_line">
+							<option value="0">Bangladesh</option>
+						</select>
+						<input type="text" class="cart-delivery_line" placeholder="State">
+						<input type="text" class="cart-delivery_line" placeholder="Postcode / Zip">						
+					</fieldset>
+					<fieldset>
+						<legend>coupon discount</legend>
+						<p class="cart-delivery_coupon">Enter your coupon code if you have one</p>
+						<input type="text" class="cart-delivery_line" placeholder="State">
+						<button class="cart-delivery_line greyBtn">apply coupon</button>
+					</fieldset>
+					<fieldset>
+						<p id="subTotal">sub total<span>$900</span></p>
+						<p id="grandTotal">grand total<span>$900</span></p>
+						<button class="pinkBtn">proceed to checkout</button>
+					</fieldset>
+				</form>
+				<button class="cart-delivery_line greyBtn">get a quote</button>
+			</div>
+		</div>
+	</main>
+</body>
+</html>

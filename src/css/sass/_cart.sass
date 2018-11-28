@@ -1,0 +1,188 @@
+@import "vars"
+@import "mixins"
+
+.cart-table
+	table-layout: fixed
+	width: 100%
+	th
+		color: $color-brand-text
+		font-size: $f-size-13
+		font-weight: $f-weight-700
+		line-height: $l-height-48
+		text-transform: uppercase
+		padding: 0px
+		+border-bottom($border-width, $border-color)
+		text-align: right
+		&:first-child
+			width: 35%
+			text-align: left
+		&_product
+	td
+		&:first-child
+			+flex()
+			text-align: left
+		color:  $color-row-product
+		font-size: $f-size-13
+		font-weight: $f-weight-400
+		line-height: $l-height-20
+		text-align: center
+		+border-bottom($border-width, $border-color)
+		padding: 20px 0px
+		&:hover h2
+			color: $color-brand-pink
+		&:hover .cart-table__img
+			+brightness($bright)		
+		&:not(:first-child)
+			text-transform: uppercase
+		&:nth-child(2)
+			padding: 0px 85px	
+		&:nth-child(3), &:last-child
+			padding: 0px 20px 0px 85px	
+		&:nth-child(4), &:nth-child(5)
+			padding: 0px 91px
+	form
+		width: 100%
+		input
+			width: 100%
+			text-align: center
+			outline: none
+			
+	&__img
+		margin-right: 20px
+		+transition-color(0.3s)		
+	&__product
+		&_a, h2
+			font-size: $f-size-13
+			font-weight: $f-weight-400
+			text-transform: uppercase
+			margin-right: 0px
+			margin: 13px 0px 40px 0px
+			color:  $color-brand-text
+			+transition-color(0.3s)	
+		&_atribut
+			color:  $color-p-cart
+			font-size: $f-size-13
+			font-weight: $f-weight-400
+			line-height: $l-height-20
+			span
+				color:  $color-p-span-cart
+				font-weight: $f-weight-300
+
+.cross
+	&__table
+		margin: 20px	
+
+.cart-buttons
+	+flex()
+	+space-between()
+	padding: 50px 0px
+	button
+		+flex()
+		+center()
+		+space-around()
+		padding: 20px 40px
+		background-color: $color-white
+		+border($border-width, $border-color)
+		color:  $color-btn-cart
+		font-size: $f-size-14
+		font-weight: $f-weight-700
+		text-transform: uppercase
+		outline: none
+		cursor: pointer		
+		+transition-bg-color-color($time-03)
+		&:hover
+			+border($border-width, $color-brand-pink)
+			color: $color-brand-pink
+		&:active
+			background-color: $color-brand-pink
+			color: $color-white
+
+.cart-delivery	
+	form
+		width: 100%
+		+flex()
+		+space-between()
+	fieldset
+		+flex()
+		border: none
+		&:last-child
+			background-color: $bg-color-fieldset
+			padding: 40px
+			text-align: right
+			text-transform: uppercase
+	legend
+		color:  $color-brand-text
+		font-size: $f-size-16
+		font-weight: $f-weight-700
+		text-transform: uppercase
+	&_line		
+		+border($border-width, $border-color)
+		outline: none
+		color:  $color-text-input-cart
+		font-size: $f-size-13
+		font-weight: $f-weight-300
+		margin-top: 20px
+	select
+		width: 335px
+		padding: 15px 0px 15px 20px
+	input
+		width: 315px
+		padding: 15px 0px 15px 20px	
+	&_coupon
+		color:  $color-black
+		font-size: $f-size-14
+		font-weight: $f-weight-300
+		margin-top: 20px
+
+#subTotal
+	color:  $color-btn-cart
+	font-size: $f-size-11
+	font-weight: $f-weight-400
+	padding-bottom: 15px
+	span
+		padding-left: 15px
+
+#grandTotal
+	color:  $color-brand-text
+	font-size: $f-size-16
+	font-weight: $f-weight-700
+	padding-bottom: 15px
+	+border-bottom($border-width, $color-hr)
+	span
+		color: $color-brand-pink
+		padding-left: 15px
+
+.greyBtn
+	background-color: $color-white
+	color:  $color-btn-cart
+	font-size: $f-size-11
+	font-weight: $f-weight-700
+	padding: 12px 15px
+	text-transform: uppercase
+	cursor: pointer
+	+transition-bg-color-color($time-03)
+	&:hover
+		+border($border-width, $color-brand-pink)
+		color: $color-brand-pink
+	&:active
+		background-color: $color-brand-pink
+		color: $color-white
+
+.pinkBtn
+	background-color: $color-brand-pink
+	+border($border-width, $color-brand-pink)
+	color:  $color-white
+	font-size: $f-size-16
+	font-weight: $f-weight-700
+	text-transform: uppercase
+	cursor: pointer
+	outline: none
+	padding: 18px 40px
+	margin-top: 20px
+	+transition-bg-color-color($time-03)
+	&:hover
+		color: $color-brand-pink
+		background-color:  $bg-color-fieldset		
+	&:active
+		background-color: $color-brand-pink
+		color: $color-white

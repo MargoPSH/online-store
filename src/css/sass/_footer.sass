@@ -1,0 +1,189 @@
+@import "vars"
+@import "mixins"
+
+
+.footer-flex
+    height: 100%
+    background-image: url(../img/subs-fon.jpg)
+    background-repeat: no-repeat
+    background-size: 100% 100%
+    position: relative
+    margin-bottom: 100px
+    &__subscribe
+        +flex()   
+        &_left
+            +flex()
+            width: 50%
+            padding: 110px 0 150px 0
+            border-right: 1px $color-white solid
+            img
+                width: 80px
+                height: 80px
+                z-index: 1
+        &_right
+            +flex()
+            +column()
+            padding: 150px 0 150px 90px
+
+
+.container__tabs
+    padding: 10px 40px 0 30px
+    z-index: 1
+    &_p
+        font-size: $f-size-16
+        line-height: $l-height-26
+        color: $sub-color-p
+        font-style: italic
+        &:first-child
+            margin-bottom: 20px       
+        span
+            color: $color-brand-pink
+            font-weight: $f-weight-700
+            font-style: normal
+    &_author
+        font-size: $f-size-12
+        color: $bg-color-baner
+        font-weight: $f-weight-300
+        line-height: $l-height-14
+        margin-bottom: 40px
+
+.opacity
+    position: absolute
+    height: 100%
+    width: 100%
+    background-color: $opacity-color  
+
+.control
+    width: 40px
+    height: 4px
+    margin-right: 12px
+    background-color: $control-color-grey
+    border: none
+    cursor: pointer
+    &:focus
+        outline: none
+
+.control.active
+    background-color: $color-brand-pink
+
+.text
+    display: none
+
+.text.active
+    display: block
+
+.subscribe-form__h
+    font-size: $f-size-24
+    font-weight: $f-weight-400
+    line-height: $l-heght-24
+    color: $sub-color-p
+    text-align: center
+    text-transform: uppercase
+    z-index: 1
+    span
+        font-size: $f-size-14
+        font-weight: $f-weight-400
+        line-height: $l-heght-24
+
+.subscribe-form
+    +flex()
+    z-index: 1
+    &__input
+        padding: 0 30px
+        font-size: $f-size-14
+        font-weight: $f-weight-400
+        line-height: $l-height-54
+        &:focus
+            outline: none
+        &_email
+            color: $sub-color-p
+            background-color: $bg-color-input
+            +border-top-left-radius(100px)
+            +border-bottom-left-radius(100px)
+            border: 1px $bg-color-input solid
+        &_submit
+            color: $color-white
+            background-color: $color-brand-pink
+            text-align: center
+            +border-top-right-radius(100px)
+            +border-bottom-right-radius(100px)
+            border: 1px $color-brand-pink solid
+            cursor: pointer
+            +transition-color($time-03)
+            &:active
+                background-color: $color-white
+                color: $color-brand-pink
+
+.footer-nav.container
+    padding-bottom: 100px
+
+.footer-nav
+    +flex()
+    +space-between()
+    &__brand
+        +column()
+        padding-right: 65px
+        max-width: 430px
+        &_text
+            padding-top: 30px
+            font-size: $f-size-14
+            font-weight: $f-weight-300
+            line-height: $l-heght-24
+    &__nav
+        display: -ms-grid
+        display: grid
+        -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr
+        -ms-grid-columns: 1fr 1fr 1fr
+        grid-template-columns: 1fr 1fr 1fr
+        &_headline
+            font-size: $f-size-18
+            font-weight: $f-weight-700
+            line-height: $l-height-26
+            text-transform: uppercase
+            color: $color-brand-pink
+            padding-right: 50px
+        &_item
+            font-size: $f-size-16
+            font-weight: $f-weight-400
+            line-height: $l-height-54
+            color: $color-footer-item
+            +transition-color($time-03)
+            &:hover
+                color: $color-brand-pink
+
+.footer-bottom
+    background-color: $border-color
+    &__copyright
+        font-size: $f-size-16
+        font-weight: $f-weight-400
+        color: $color-copyright
+    &__icons
+        &_icon
+            width: 32px
+            height: 32px
+            color: $color-icon
+            background-color: $color-white
+            cursor: pointer
+            border: none
+            +transition-color($time-03)
+            &:focus
+                outline: none
+            &:hover
+                +brightness(95%)
+            &:active
+                +brightness(100%)
+                color: $color-white
+                background-color: $color-brand-pink
+            
+
+.footer-bottom.container
+    +flex()
+    +space-between()
+    padding-top: 25px
+    padding-bottom: 25px
+    
+.icon-href
+    font-size: $f-size-16
+    font-weight: $f-weight-400
+    

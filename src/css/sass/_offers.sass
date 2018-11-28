@@ -1,0 +1,45 @@
+@import "vars"
+@import "mixins"
+
+.main-index__offers
+    +flex()
+    margin-bottom: 100px
+    &_content        
+        width: 50%
+        &:first-child
+            margin-right: 20px
+
+.offers-content__img
+    position: relative
+    +transition-color($time-03)
+    &:hover
+        +transform-scale($scale-05)
+    &:first-child
+        margin-bottom: 20px
+    img
+        width: 100%
+           
+
+.offers-content__text
+        text-transform: uppercase
+        font-weight: $f-weight-900
+        background-color: $color-white
+        padding: 10px
+        z-index: 1
+        position: absolute
+        top: 25px
+        left: 0px
+        +transition-color($time-03)
+        &:hover
+            background-color: $color-brand-pink
+        &:hover p, &:hover span
+            color: $color-white
+        p
+            font-size: $f-size-18
+            color: $color-brand-text
+            +transition-color($time-03)
+        span
+            font-size: $f-size-30
+            color: $color-brand-pink
+            +transition-color($time-03)
+

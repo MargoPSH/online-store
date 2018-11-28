@@ -1,0 +1,119 @@
+=border-radius($radius)
+	-webkit-border-radius: $radius
+	-moz-border-radius: $radius
+	-ms-border-radius: $radius
+	border-radius: $radius
+	
+=border-bottom-left-radius($radius)
+	-webkit-border-bottom-left-radius: $radius
+	-moz-border-bottom-left-radius: $radius
+	-ms-border-bottom-left-radius: $radius
+	border-bottom-left-radius: $radius
+	
+=border-bottom-right-radius($radius)
+	-webkit-border-bottom-right-radius: $radius
+	-moz-border-bottom-right-radius: $radius
+	-ms-border-bottom-right-radius: $radius
+	border-bottom-right-radius: $radius
+	
+=border-top-left-radius($radius)
+	-webkit-border-top-left-radius: $radius
+	-moz-border-top-left-radius: $radius
+	-ms-border-top-left-radius: $radius
+	border-top-left-radius: $radius
+	
+=border-top-right-radius($radius)
+	-webkit-border-top-right-radius: $radius
+	-moz-border-top-right-radius: $radius
+	-ms-border-top-right-radius: $radius
+	border-top-right-radius: $radius
+	
+=border($border-width, $border-color)
+	border: $border-width solid $border-color
+	
+=border-top($border-width, $border-color)
+	border-top: $border-width solid $border-color
+	
+=border-left($border-width, $border-color)
+	border-left: $border-width solid $border-color
+	
+=border-bottom($border-width, $border-color)
+	border-bottom: $border-width solid $border-color
+	
+=rotate($triangle-rotate)
+	-webkit-transform: rotate($triangle-rotate)
+	-ms-transform: rotate ($triangle-rotate)
+	transform: rotate ($triangle-rotate)
+
+=box-shadow($top, $right, $bottom, $left, $color-box-shadow)
+	-webkit-box-shadow: $top $right $bottom $left $color-box-shadow
+	box-shadow: $top $right $bottom $left $color-box-shadow
+
+=liner-gradient($color1-grad-submenu, $color2-grad-submenu)
+	background: -webkit-gradient(linear, left top, left bottom, from($color1-grad-submenu), to($color2-grad-submenu))
+	background: -webkit-linear-gradient(top, $color1-grad-submenu 0%, $color2-grad-submenu 100%)
+	background: -o-linear-gradient(top, $color1-grad-submenu 0%, $color2-grad-submenu 100%)
+	background: linear-gradient(180deg, $color1-grad-submenu 0%, $color2-grad-submenu 100%)
+	
+=flex()
+	display: -webkit-box
+	display: -ms-flexbox
+	display: flex
+	
+=center()
+	-webkit-box-align: center
+	-ms-flex-align: center
+	align-items: center
+	
+=space-between()
+	-webkit-box-pack: justify
+	-ms-flex-pack: justify
+	justify-content: space-between	
+	
+=content-center()
+	-webkit-box-pack: center
+	-ms-flex-pack: center
+	justify-content: center
+
+=scaleX($scaleX)
+	-webkit-transform: scaleX($scaleX)
+	-ms-transform: scaleX($scaleX)
+	transform: scaleX($scaleX)
+
+=column()
+	-webkit-box-orient: vertical
+	-webkit-box-direction: normal
+	-ms-flex-direction: column
+	flex-direction: column
+	
+=transition-bg-color-color($time-03)
+	-webkit-transition: background-color $time-03 ease-out, color $time-03 ease-out, border-color $time-03 ease-out
+	-o-transition: background-color $time-03 ease-out, color $time-03 ease-out, border-color $time-03 ease-out
+	transition: background-color $time-03 ease-out, color $time-03 ease-out, border-color $time-03 ease-out
+	
+=space-around()
+	-ms-flex-pack: distribute
+	justify-content: space-around
+	
+=brightness($bright)
+	-webkit-filter: brightness($bright)
+	filter: brightness($bright)
+	
+=transition-color($time-03)
+	-webkit-transition: $time-03 ease
+	-o-transition: $time-03 ease
+	transition: $time-03 ease
+	
+=transition-submenu($time-03)
+	-webkit-transition: all $time-03 ease
+	-o-transition: all $time-03 ease
+	transition: all $time-03 ease
+
+=transform-scale($scale-05)
+	-webkit-transform: scale($scale-05)
+	-ms-transform: scale($scale-05)
+	transform: scale($scale-05)
+
+=flex-wrap()
+	-ms-flex-wrap: wrap
+	flex-wrap: wrap

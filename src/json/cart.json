@@ -1,0 +1,27 @@
+{
+    "amount": 900,
+    "countGoods": 6,
+    "contents": [
+      {
+        "id_product": 9,
+        "name_product": "Mango people t-shirt",
+        "img": "img/cart/img1.png",
+        "price": 150,
+        "quantity": 2
+      },
+      {
+        "id_product": 10,
+        "name_product": "Mango people t-shirt",
+        "img": "img/cart/img2.png",
+        "price": 150,
+        "quantity": 2
+      },
+      {
+        "id_product": 11,
+        "name_product": "Mango people t-shirt",
+        "img": "img/cart/img3.png",
+        "price": 150,
+        "quantity": 2
+      }
+    ]
+  }

@@ -1,0 +1,117 @@
+@import "vars"
+@import "mixins"
+
+.submenu
+	position: relative	
+	+flex()
+	+center()	
+	&:hover .ddflex
+		+flex()
+	.browse
+		+space-between()
+		+border-bottom-left-radius(3px)
+		+border-top-left-radius(3px)
+		+border($border-width, $border-color)
+		+liner-gradient($color1-grad-submenu, $color2-grad-submenu)		
+		color: $color-brand-text
+		font-size: $f-size-14
+		font-weight: $f-weight-300
+		line-height: $l-height-32
+		padding: 0 14px
+		margin-left: 45px
+		&__caret
+			font-size: $f-size-14
+			font-weight: $f-weight-400
+			line-height:  $l-height-32			
+			margin-left: 5px
+			&_grey
+				color: $color-caret-grey
+	.ddflex
+		display: none
+		&__triangle
+			height: $tr-width-height
+			width: $tr-width-height
+			+border-top($border-width, $border-color)
+			+border-left($border-width, $border-color)
+			position: absolute	
+			+rotate($triangle-rotate)
+			background-color: $color-white
+			z-index: 2
+			&_browse
+				top: 28px
+				left: 112px
+			&_cart
+				top: 83px
+				left: 53px
+			&_man
+				top: 50px
+				left: 50px
+			&_women
+				top: 50px
+				left: 75px
+			&_kids
+				top: 50px
+				left: 50px
+			&_accoseriese
+				top: 50px
+				left: 108px
+			&_featured
+				top: 50px
+				left: 85px
+			&_deals
+				top: 50px
+				left: 90px
+		&__content
+			position: absolute
+			+flex()					
+			+box-shadow($top, $right, $bottom, $left, $color-box-shadow)
+			+border-radius(5px)
+			background-color: $color-white			
+			+border($border-width, $border-color)
+			z-index: 1		
+			&_browse
+				top: 34px
+				left: 40px
+				width: 245px
+				padding: 10px 15px
+				+column()
+			&_cart
+				top: 88px
+				left: 35px
+				width: 260px
+				padding: 0 17px
+				+column()
+			&_man
+				top: 55px
+				left: 0
+				padding: 20px
+			&_women
+				top: 55px
+				left: -10px
+				padding: 20px
+			&_kids
+				top: 55px
+				left: -20px
+				padding: 20px
+			&_accoseriese
+				top: 55px
+				left: -92px
+				padding: 20px
+			&_featured
+				top: 55px
+				left: -225px
+				padding: 20px
+			&_deals
+				top: 55px
+				left: -335px
+				padding: 20px
+			a
+				color: $color-a
+				font-size: $f-size-14
+				font-weight: $f-weight-400
+				line-height: $l-height-28
+				letter-spacing: $let-spac-035
+				margin-left: 5px
+				+transition-color(0.3s)
+				&:hover
+					color: $color-brand-pink
